@@ -45,6 +45,39 @@ var animes =["Ninja Scroll", "Ghost In the Shell", "Akira", "Vampire Hunter D"]
 
   }
 
+  // Event listener for our anime-button
+    $("#anime-button").on("click", function() {
+
+      // Storing our giphy API URL for a random anime image
+      var queryURL = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=anime";
+
+      // Perfoming an AJAX GET request to our queryURL
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      })
+
+      // After the data from the AJAX request comes back
+      .done(function(response) {
+
+        // Saving the image_original_url property
+        var imageUrl = response.data.image_original_url;
+
+        // Creating and storing an image tag
+        var animeImage = $("<img>");
+
+        // Setting the animeImage src attribute to imageUrl
+        animeImage.attr("src", imageUrl);
+        animeImage.attr("alt", "anime image");
+        
+        // Prepending the animeImage to the images div
+        $("#images").prepend(animeImage);
+
+                // Creating and storing an image tag
+        // var animeImage =  $("#images").prepend($("<img>").attr("src", imageUrl).attr("alt", "anime image"));
+      });
+    });
+
     function renderButtons() {
         //delete the contents inside anime-view
         $('#buttons-view').empty();
