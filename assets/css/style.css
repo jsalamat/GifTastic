@@ -4,3 +4,9 @@ form,
 input {
        margin: 10px;
       }
+
+div.animename , img {
+              float: left;
+              margin: 10px 15px 10px 0;
+              padding: 0;
+            }
