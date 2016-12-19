@@ -6,10 +6,14 @@ $(document).ready(function(){
 
         function displayanimeGif() {
 
-        var animename = $(this).attr("data-name");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animename + "&api_key=dc6zaTOxFJmzC&limit=10";
+        var randomNumber = Math.floor(Math.random() * 100);
 
-                                                            // q= search query term or phrase   limit=10 limits the results returned to 10
+        var animename = $(this).attr("data-name");
+        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animename + 
+                      "&api_key=dc6zaTOxFJmzC&limit=10&rating=r&offset=" + randomNumber;
+
+        // q= search query term or phrase   limit=10 limits the results returned to 10  
+        // offset= + randumNumber to randomize the gif that get collected to anime-view
 
         // Creates AJAX call for the specific movie button being clicked
         $.ajax({
@@ -76,8 +80,10 @@ $(document).ready(function(){
                 a.addClass('anime');
                 a.attr('data-name', topics[i]);
                 a.text(topics[i]);
-                $('#buttons-view').append(a);
+                $('#buttons-view').prepend(a);
             }
+            // can't get to work trying to prevent adding blank button 
+          
         }
 
         $('#add-anime').on("click", function(event){
@@ -85,9 +91,15 @@ $(document).ready(function(){
 
             var anime = $('#anime-input').val().trim();
 
-            topics.push(anime);
+              if ( anime != "") {
+              // prevents adding blank space as button
+
+               topics.push(anime);
 
             renderButtons();
+            }
+
+           
         })
 
         $(document).on("click", ".anime", displayanimeGif)

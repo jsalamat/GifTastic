@@ -1,9 +1,112 @@
+html, body {
+	background: url(../images/shonejumpbw.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+}
+
+.header {
+  
+  margin: 20px 0 20px 0;
+  padding: 0;
+/*  background-color: rgba(255,165,0, 0.4);*/
+  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,165,0, 1));
+  border-top: 4px solid orange;
+  border-bottom: 4px solid orange;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.h1, h1 {
+  font-size: 75px;
+  color: rgb(255,165,0);
+  line-height: .2;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px grey;
+  margin-left: 40px;
+  margin-bottom: 0;
+  margin-top: 50px;
+  padding-right: 0;
+  font-family: 'Exo', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#white {
+  color: #000000;
+}
+
+#anime-form label {
+  font-family: 'Exo', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 10px;
+}
+
 button.anime, div, form, input {
     margin: 10px;
 }
 
+button.anime {
+  clear: both;
+  margin-right: 50px;
+}
+
+div.row {
+  margin: 0;
+}
+
+#redsection {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 0;
+  margin-left: 40px;
+  background-color: orange;
+  padding: 0;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#anime-form {
+  margin-top: 0;
+}
+
+#searchbox {
+  background-color: #fcdc85;
+  margin: 0;
+  padding: 0 0 5px 0;
+}
+
+#bluegallery {
+  margin-left: 10px 
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
 div.animename, img {
     float: left;
-    margin: 10px 15px 10px 0;
+    margin: 10px 15px 10px 0px;
     padding: 0;
+}
+
+div.animename, p {
+    margin: 0px 0px 0px 15px;
+    padding: 0;
+}
+
+div.footer {
+    max-width: 100%;
+  	color: #000000;
+  	font-size: 16px;
+  	height: 85px;
+    line-height: 65px;
+    text-align: center;
 }
