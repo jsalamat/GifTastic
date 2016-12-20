@@ -10,7 +10,7 @@ $(document).ready(function(){
         var randomNumber = Math.floor(Math.random() * 100);
 
         var animename = $(this).attr("data-name");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animename + 
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animename + 
                       "&api_key=dc6zaTOxFJmzC&limit=10&rating=r&offset=" + randomNumber;
 
         // q= search query term or phrase   limit=10 limits the results returned to 10  
