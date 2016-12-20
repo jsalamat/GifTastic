@@ -42,7 +42,8 @@ body {
   font-family: 'Exo', sans-serif;
   font-weight: bold;
   font-style: italic;
-  margin-top: 10px;
+  margin-top: 15px;
+  font-size: 16px;
 }
 
 button.anime, div, form, input {
@@ -58,7 +59,7 @@ div.row {
   margin: 0;
 }
 
-#redsection {
+#orangesection {
   margin-top: 40px;
   margin-bottom: 40px;
   margin-right: 0;
@@ -103,18 +104,18 @@ div.animename, p {
 }
 
 input#add-anime {
+  display: inline-block;
+  font-size: 16px;
   color: #ffffff;
   background-color: orange;
   border: 2px solid #ffffff;
-  font-size: 18px;
   letter-spacing: 1px; 
   margin: 15px;
   padding: 10px 20px 10px;
   max-width: 330px;
   border-radius: 15px;
   cursor: pointer;
-  -webkit-transition-duration: 1s; /* Safari */
-  transition-duration: 1s;
+  box-shadow: 5px 9px #999;
 }
 
 input#add-anime:hover {
@@ -122,17 +123,23 @@ input#add-anime:hover {
   background-color: #ffffff;
   border: 2px solid orange;
   font-style: bold;
-  text-shadow: 2px 2px 2px grey;
+/*  text-shadow: 2px 2px 2px grey;*/
+}
+
+input#add-anime:active {
+  background-color: #ffffff;
+  box-shadow: 5px 5px #666;
+  transform: translateY(4px);
 }
 
 button.anime {
+  font-size: 16px;
   color: orange;
   background-color: #ffffff;
   border: 2px solid #fcdc85;
-  font-size: 18px;
   letter-spacing: 1px; 
   margin: 15px;
-  padding: 10px 20px 10px;
+  padding: 10px 15px 10px;
   max-width: 330px;
   border-radius: 15px;
   cursor: pointer;
@@ -146,13 +153,30 @@ button.anime:hover {
   background-color: #fcdc85;
   border: 2px solid #000000;
   font-style: bold;
+  box-shadow: 5px 5px grey;
+}
+
+button.anime:focus {
+  color: #000000;
+  background-color: #fcdc85;
+  border: 2px solid #000000;
+  font-style: bold;
+  box-shadow: 5px 5px grey;
 }
 
 img.gif:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-img.gif:active {
+img.gif:focus {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img:focus {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
