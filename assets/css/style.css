@@ -102,9 +102,64 @@ div.animename, p {
     padding: 0;
 }
 
+input#add-anime {
+  color: #ffffff;
+  background-color: orange;
+  border: 2px solid #ffffff;
+  font-size: 18px;
+  letter-spacing: 1px; 
+  margin: 15px;
+  padding: 10px 20px 10px;
+  max-width: 330px;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
+}
+
+input#add-anime:hover {
+  color: orange;
+  background-color: #ffffff;
+  border: 2px solid orange;
+  font-style: bold;
+  text-shadow: 2px 2px 2px grey;
+}
+
+button.anime {
+  color: orange;
+  background-color: #ffffff;
+  border: 2px solid #fcdc85;
+  font-size: 18px;
+  letter-spacing: 1px; 
+  margin: 15px;
+  padding: 10px 20px 10px;
+  max-width: 330px;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
+
+}
+
+button.anime:hover {
+  color: #000000;
+  background-color: #fcdc85;
+  border: 2px solid #000000;
+  font-style: bold;
+}
+
+img.gif:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img.gif:active {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 div.footer {
     max-width: 100%;
-  	color: #000000;
+  	color: orange;
   	font-size: 16px;
   	height: 85px;
     line-height: 65px;
