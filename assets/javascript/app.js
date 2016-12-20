@@ -2,7 +2,8 @@ $(document).ready(function(){
 
   // topics in the array to be a button
 
-        var topics =["Dragonball Super", "Cowboy Bebop", "One Piece", "Samurai Champloo", "One-Punch Man", "Attack on Titans", "Howl's Moving Castle", "Ninja Scroll", "Ghost In the Shell", "Sailor Moon"]
+        // var topics =["Dragonball Super", "Cowboy Bebop", "One Piece", "Samurai Champloo", "One-Punch Man", "Attack on Titans", "Howl's Moving Castle", "Ninja Scroll", "Ghost In the Shell", "Sailor Moon"]
+        var topics =["Sailor Moon", "Ghost In the Shell", "Ninja Scroll", "Howl's Moving Castle", "Attack on Titans", "One-Punch Man", "Samurai Champloo", "Cowboy Bebop", "Dragonball Super", "One Piece"]
 
         function displayanimeGif() {
 
